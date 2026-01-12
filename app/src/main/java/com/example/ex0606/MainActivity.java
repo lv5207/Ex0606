@@ -25,6 +25,19 @@ int randNum;
     }
 
     public void changeimg(View view) {
-
-    }
+        randNum = (int)(Math.random() * (3-1+1) + 1);
+        btn.setText(""+randNum);
+        if (randNum == 1)
+        {
+            iVMain.setImageResource(R.drawable.imgone);
+        }
+        else if (randNum == 2)
+        {
+            iVMain.setImageResource(R.drawable.imgtwo);
+        }
+        else
+        {
+            iVMain.setImageResource(R.drawable.imgthree);
+        }
+        }
 }
